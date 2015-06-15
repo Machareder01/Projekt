@@ -1,0 +1,12 @@
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\bin\Debug\coffeeshop.exe.config
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\obj\Debug\coffeeshop.Form1.resources
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\obj\Debug\coffeeshop.Login.resources
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\obj\Debug\coffeeshop.Properties.Resources.resources
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\obj\Debug\coffeeshop.csproj.GenerateResource.Cache
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\bin\Debug\coffeeshop.exe
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\bin\Debug\coffeeshop.pdb
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\obj\Debug\coffeeshop.exe
+c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\obj\Debug\coffeeshop.pdb
+H:\AWP\coffeeshop\coffeeshop\bin\Debug\coffeeshop.exe.config
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.exe
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.pdb
