@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,8 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\CoffeeShopDataAccess.cs" />
+    <Compile Include="DataAccess\Connection.cs" />
     <Compile Include="DataAccess\LoginDataAccess.cs" />
+    <Compile Include="DataBL\GlobalBL.cs" />
+    <Compile Include="DataBL\KaffeBL.cs" />
     <Compile Include="DataBL\LoginBL.cs" />
+    <Compile Include="DataBL\UserBL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

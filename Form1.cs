@@ -1,4 +1,5 @@
-﻿using System;
+﻿using coffeeshop.DataBL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,22 @@ namespace coffeeshop
 {
     public partial class Form1 : Form
     {
+        private LoginBL loginBL;
         public Form1()
         {
             InitializeComponent();
+            loginBL = new LoginBL();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool success = loginBL.login("1234");
 
+            if (!success)
+            {
+                MessageBox.Show("");
+            }
         }
+
     }
 }

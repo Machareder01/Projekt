@@ -10,3 +10,10 @@ c:\users\a.hachicha\documents\visual studio 2013\Projects\coffeeshop\coffeeshop\
 H:\AWP\coffeeshop\coffeeshop\bin\Debug\coffeeshop.exe.config
 H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.exe
 H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.pdb
+H:\AWP\coffeeshop\coffeeshop\bin\Debug\coffeeshop.exe
+H:\AWP\coffeeshop\coffeeshop\bin\Debug\coffeeshop.pdb
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.csprojResolveAssemblyReference.cache
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.Form1.resources
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.Login.resources
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.Properties.Resources.resources
+H:\AWP\coffeeshop\coffeeshop\obj\Debug\coffeeshop.csproj.GenerateResource.Cache

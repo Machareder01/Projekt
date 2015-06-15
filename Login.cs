@@ -22,12 +22,7 @@ namespace coffeeshop
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            bool success = loginBL.login(tbCopyCode.Text);
-
-            if(!success)
-            {
-                MessageBox.Show("");
-            }
+           
         }
 
         

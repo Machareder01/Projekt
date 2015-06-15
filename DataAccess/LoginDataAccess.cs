@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace coffeeshop.DataAccess
             try
             {
                 CoffeeShopDataAccess.MyConnection.Open();
+                CoffeeShopDataAccess.MyConnection.Close();
                 return true;
             }
             catch (Exception ex)
