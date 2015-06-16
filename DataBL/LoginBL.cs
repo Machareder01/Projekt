@@ -9,7 +9,7 @@ namespace coffeeshop.DataBL
 {
     public class LoginBL
     {
-        public bool login(string copycode)
+        public string login(string copycode)
         {
             return LoginDataAccess.login(copycode);
         }
