@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using coffeeshop.DataBL;
 
 namespace coffeeshop.DataAccess
 {
@@ -20,9 +21,10 @@ namespace coffeeshop.DataAccess
             }
         }
 
-        public static string login(string copycode)
+
+        public static MySqlDataReader login(string copycode)
         {
-            string user = string.Empty;
+            MySqlDataReader reader = null;
 
             try
             {
@@ -30,24 +32,14 @@ namespace coffeeshop.DataAccess
                 MySqlCommand command = CoffeeShopDataAccess.MyConnection.CreateCommand();
                 command.CommandText = "SELECT * FROM customer";
 
-                MySqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    if (reader["Copycode"].ToString().Equals(copycode))
-                    {
-                        user = reader["Name"].ToString();
-                    }
-                }
-
-                CoffeeShopDataAccess.MyConnection.Close();
+                reader = command.ExecuteReader();
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-
-            return user;
+            return reader;
         }
 
         public static bool logout()

@@ -4,14 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using coffeeshop.DataAccess;
+using MySql.Data.MySqlClient;
 
 namespace coffeeshop.DataBL
 {
     public class LoginBL
     {
-        public string login(string copycode)
+        public DTO login(string copycode)
         {
-            return LoginDataAccess.login(copycode);
+            DTO dto = null;
+            MySqlDataReader reader = LoginDataAccess.login(copycode);
+
+            if(reader != null)
+            {
+                while (reader.Read())
+                {
+                    User user = new User();
+                    user.Username = reader["Name"].ToString();
+                    user.Id = Convert.ToInt32(reader["ID"].ToString());
+
+                    dto = new DTO();
+                    dto.User = user;
+                }
+            }
+
+            return dto;
         }
 
         public bool logout()

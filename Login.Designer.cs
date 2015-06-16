@@ -209,12 +209,14 @@
             // 
             // tbCopyCode
             // 
+            this.tbCopyCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCopyCode.Location = new System.Drawing.Point(40, 81);
+            this.tbCopyCode.MaxLength = 5;
             this.tbCopyCode.Multiline = true;
             this.tbCopyCode.Name = "tbCopyCode";
-            this.tbCopyCode.Size = new System.Drawing.Size(287, 41);
+            this.tbCopyCode.PasswordChar = '*';
+            this.tbCopyCode.Size = new System.Drawing.Size(289, 41);
             this.tbCopyCode.TabIndex = 17;
-            this.tbCopyCode.UseSystemPasswordChar = true;
             // 
             // Login
             // 

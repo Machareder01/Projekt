@@ -47,13 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coffee.cs" />
     <Compile Include="DataAccess\CoffeeShopDataAccess.cs" />
-    <Compile Include="DataAccess\Connection.cs" />
     <Compile Include="DataAccess\LoginDataAccess.cs" />
-    <Compile Include="DataBL\GlobalBL.cs" />
-    <Compile Include="DataBL\KaffeBL.cs" />
     <Compile Include="DataBL\LoginBL.cs" />
-    <Compile Include="DataBL\UserBL.cs" />
+    <Compile Include="DataBL\CoffeeShopBL.cs" />
+    <Compile Include="DTO.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +68,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

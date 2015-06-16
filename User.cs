@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace coffeeshop.DataBL
+namespace coffeeshop
 {
-    public class KaffeBL
+    public class User
     {
+        public string Username { get; set; }
+        public int Id { get; set; }
     }
 }

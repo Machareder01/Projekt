@@ -25,7 +25,23 @@ namespace coffeeshop.DataAccess
         public static string ConnectionString = "Server=localhost;Uid=Tobias;Password=Test;database=coffeeshop;";
         
         public static MySqlConnection MyConnection = new MySqlConnection(CoffeeShopDataAccess.ConnectionString);
-
-
+        
+        public static void OrderCoffee(int userID, string userName, int coffeeCount, int totalPrice)
+        {
+            using (MySqlCommand command = new MySqlCommand("Insert into order (Cust_ID, OrderDate, Quantity, Totalprice)"
+                + " Values (" + userID.ToString()
+                + ", " + DateTime.Now.ToString()
+                + ", " + coffeeCount.ToString()
+                + ", " + totalPrice.ToString() + "); ", MyConnection))
+            {
+                MyConnection.Open();
+                command.ExecuteNonQuery();
+               
+                if (MyConnection.State == System.Data.ConnectionState.Open)
+                {
+                    MyConnection.Close();
+                }                
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,33 +15,35 @@ namespace coffeeshop
     public partial class Login : Form
     {
         private LoginBL loginBL;
-        private UserBL userBL;
-        
-        private EventHandler ButtonNumberClicK;
-        
-            private void OnButtonNumberClick(object sender, EventArgs e)
+        private DTO dto = null;
+
+        private EventHandler ButtonNumberClicK = null;
+
+        private void OnButtonNumberClick(object sender, EventArgs e)
+        {
+            if (ButtonNumberClicK != null)
             {
-                if(ButtonNumberClicK != null)
-                {
-                    ButtonNumberClicK(sender, e);
-                }
+                ButtonNumberClicK(sender, e);
             }
-            
+        }
+
         public Login()
         {
             InitializeComponent();
             loginBL = new LoginBL();
-            userBL = new UserBL();
-            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            userBL.Username = loginBL.login("1234");
+            dto = loginBL.login(tbCopyCode.Text);
 
-            if (userBL.Username != string.Empty)
+            if (dto != null)
             {
-                MessageBox.Show("Benutzer: '" + userBL.Username + "' erfolgreich eingeloggt!");
+                MessageBox.Show("Benutzer: '" + dto.User.Username + "' erfolgreich eingeloggt!");
+
+                ClientForm clientform = new ClientForm(dto);
+                clientform.Show();
+                this.Close();
             }
         }
 
@@ -49,7 +52,7 @@ namespace coffeeshop
 
         private void ButtonNumberClick(object sender, EventArgs e)
         {
-            tbCopyCode.Text = tbCopyCode.Text + ((Button)sender).Name[((Button)sender).Name.Length -1];
+            tbCopyCode.Text = tbCopyCode.Text + ((Button)sender).Name[((Button)sender).Name.Length - 1];
         }
 
         private void btnC_Click(object sender, EventArgs e)
@@ -57,7 +60,7 @@ namespace coffeeshop
             tbCopyCode.Text = string.Empty;
         }
 
-#endregion
-}
+        #endregion
+    }
     }
 
