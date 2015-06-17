@@ -61,6 +61,14 @@ namespace coffeeshop
         }
 
         #endregion
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            if (tbCopyCode.Text.Length > 1)
+            {
+                tbCopyCode.Text = tbCopyCode.Text.Remove(tbCopyCode.Text.Length - 1, 1);
+            }
+        }
     }
     }
 

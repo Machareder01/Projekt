@@ -220,6 +220,7 @@
             this.btnReset.Size = new System.Drawing.Size(40, 41);
             this.btnReset.TabIndex = 21;
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Login
             // 
