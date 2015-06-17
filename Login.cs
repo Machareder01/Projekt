@@ -43,7 +43,7 @@ namespace coffeeshop
 
                 ClientForm clientform = new ClientForm(dto);
                 clientform.Show();
-                this.Close();
+                this.Hide();
             }
         }
 
@@ -67,6 +67,14 @@ namespace coffeeshop
             if (tbCopyCode.Text.Length > 1)
             {
                 tbCopyCode.Text = tbCopyCode.Text.Remove(tbCopyCode.Text.Length - 1, 1);
+            }
+        }
+
+        private void tbCopyCode_TextChanged(object sender, EventArgs e)
+        {
+            if (tbCopyCode.Text.Length == 5)
+            {
+                
             }
         }
     }

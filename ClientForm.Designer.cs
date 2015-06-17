@@ -34,10 +34,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbCoffeeCount = new System.Windows.Forms.Label();
             this.tbCoffeeCount = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tbReceipt = new System.Windows.Forms.TextBox();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tbReceipt = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,6 +46,7 @@
             // 
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbUserName.Location = new System.Drawing.Point(12, 9);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(0, 31);
@@ -53,28 +54,33 @@
             // 
             // btnOrder
             // 
+            this.btnOrder.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(63, 172);
+            this.btnOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnOrder.Location = new System.Drawing.Point(63, 184);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(437, 86);
             this.btnOrder.TabIndex = 4;
             this.btnOrder.Text = "Bestellen";
-            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.UseVisualStyleBackColor = false;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(507, 172);
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancel.Location = new System.Drawing.Point(507, 184);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(437, 86);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Abbrechen";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Moccasin;
             this.panel1.Controls.Add(this.lbCoffeeCount);
             this.panel1.Controls.Add(this.tbCoffeeCount);
             this.panel1.Controls.Add(this.btnCancel);
@@ -85,13 +91,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 276);
+            this.panel1.Size = new System.Drawing.Size(1016, 291);
             this.panel1.TabIndex = 6;
             // 
             // lbCoffeeCount
             // 
             this.lbCoffeeCount.AutoSize = true;
             this.lbCoffeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCoffeeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbCoffeeCount.Location = new System.Drawing.Point(528, 92);
             this.lbCoffeeCount.Name = "lbCoffeeCount";
             this.lbCoffeeCount.Size = new System.Drawing.Size(96, 37);
@@ -101,28 +108,13 @@
             // tbCoffeeCount
             // 
             this.tbCoffeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCoffeeCount.Location = new System.Drawing.Point(378, 61);
+            this.tbCoffeeCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.tbCoffeeCount.Location = new System.Drawing.Point(417, 92);
             this.tbCoffeeCount.Multiline = true;
             this.tbCoffeeCount.Name = "tbCoffeeCount";
-            this.tbCoffeeCount.Size = new System.Drawing.Size(122, 94);
+            this.tbCoffeeCount.Size = new System.Drawing.Size(83, 37);
             this.tbCoffeeCount.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.tbReceipt);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 276);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1016, 465);
-            this.panel2.TabIndex = 7;
-            // 
-            // tbReceipt
-            // 
-            this.tbReceipt.Location = new System.Drawing.Point(63, 6);
-            this.tbReceipt.Multiline = true;
-            this.tbReceipt.Name = "tbReceipt";
-            this.tbReceipt.Size = new System.Drawing.Size(881, 337);
-            this.tbReceipt.TabIndex = 0;
+            this.tbCoffeeCount.Text = "1";
             // 
             // btnMinus
             // 
@@ -155,6 +147,24 @@
             this.btnPlus.UseVisualStyleBackColor = true;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SaddleBrown;
+            this.panel2.Controls.Add(this.tbReceipt);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 291);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1016, 450);
+            this.panel2.TabIndex = 7;
+            // 
+            // tbReceipt
+            // 
+            this.tbReceipt.Location = new System.Drawing.Point(63, 21);
+            this.tbReceipt.Multiline = true;
+            this.tbReceipt.Name = "tbReceipt";
+            this.tbReceipt.Size = new System.Drawing.Size(881, 406);
+            this.tbReceipt.TabIndex = 0;
+            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,8 +191,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbCoffeeCount;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox tbReceipt;
         private System.Windows.Forms.Label lbCoffeeCount;
+        private System.Windows.Forms.TextBox tbReceipt;
 
     }
 }

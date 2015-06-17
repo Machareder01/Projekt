@@ -12,16 +12,6 @@ namespace coffeeshop.DataAccess
 {
     public class CoffeeShopDataAccess
     {
-        private static CoffeeShopDataAccess instance = new CoffeeShopDataAccess();
-
-        public static CoffeeShopDataAccess Instance
-        {
-            get
-            {
-                return instance;
-            }
-        }
-
         public static string ConnectionString = "Server=localhost;Uid=Tobias;Password=Test;database=coffeeshop;";
         
         public static MySqlConnection MyConnection = new MySqlConnection(CoffeeShopDataAccess.ConnectionString);
@@ -42,6 +32,27 @@ namespace coffeeshop.DataAccess
                     MyConnection.Close();
                 }                
             }
+        }
+
+        public static MySqlDataReader getReceipt()
+        {
+            MySqlDataReader reader = null;
+
+            try
+            {
+                CoffeeShopDataAccess.MyConnection.Open();
+                MySqlCommand command = CoffeeShopDataAccess.MyConnection.CreateCommand();
+                command.CommandText = "SELECT * FROM ....";
+
+                reader = command.ExecuteReader();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+
+            return reader;
         }
     }
 }

@@ -35,3 +35,4 @@ C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.Login.resources
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.Properties.Resources.resources
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.csproj.GenerateResource.Cache
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.ClientForm.resources
+C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.csprojResolveAssemblyReference.cache

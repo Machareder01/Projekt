@@ -27,5 +27,13 @@ namespace coffeeshop.DataBL
         {
             return coffeeCount * coffeePrice;
         }
+
+        public string getReceipt()
+        {
+            string receipt = string.Empty;
+            CoffeeShopDataAccess.getReceipt();
+
+            return receipt;
+        }
     }
 }

@@ -27,6 +27,15 @@ namespace coffeeshop
 
             this.coffeeShopBL = new CoffeeShopBL(dto);
             tbCoffeeCount.Text = currentCoffeeCount.ToString();
+
+            if(dto != null)
+            {
+                if(dto.User != null)
+                {
+                    lbUserName.Text = dto.User.Username;
+                    tbReceipt.Text = coffeeShopBL.getReceipt();
+                }
+            }
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
