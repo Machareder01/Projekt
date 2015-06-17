@@ -19,15 +19,13 @@ namespace coffeeshop.DataBL
 
         public void orderCoffee(int coffeeCount)
         {
-            DTO.TotalPrice = getTotalPrice(coffeeCount);
-            CoffeeShopDataAccess.OrderCoffee(DTO.User.Id, DTO.User.Username, coffeeCount, DTO.TotalPrice);
+            DTO.Order.TotalPrice = getTotalPrice(coffeeCount);
+            CoffeeShopDataAccess.OrderCoffee(DTO.User.Id, DTO.User.Username, coffeeCount, DTO.Order.TotalPrice);
         }
 
         private int getTotalPrice(int coffeeCount)
         {
             return coffeeCount * coffeePrice;
         }
-       
-
     }
 }

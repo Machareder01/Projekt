@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnC = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
@@ -44,18 +43,9 @@
             this.lbCopyCode = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tbCopyCode = new System.Windows.Forms.TextBox();
+            this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnReset
-            // 
-            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(333, 81);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(120, 41);
-            this.btnReset.TabIndex = 21;
-            this.btnReset.Text = "Zurück";
-            this.btnReset.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -217,6 +207,19 @@
             this.tbCopyCode.PasswordChar = '*';
             this.tbCopyCode.Size = new System.Drawing.Size(289, 41);
             this.tbCopyCode.TabIndex = 17;
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackgroundImage = global::coffeeshop.Properties.Resources.Pfeil_Grün;
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(333, 81);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(40, 41);
+            this.btnReset.TabIndex = 21;
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
             // Login
             // 

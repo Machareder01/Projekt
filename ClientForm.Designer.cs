@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.lbUserName = new System.Windows.Forms.Label();
-            this.btnMinus = new System.Windows.Forms.Button();
-            this.btnPlus = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tbCoffeeCount = new System.Windows.Forms.TextBox();
-            this.tbReceipt = new System.Windows.Forms.TextBox();
             this.lbCoffeeCount = new System.Windows.Forms.Label();
+            this.tbCoffeeCount = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tbReceipt = new System.Windows.Forms.TextBox();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,30 +50,6 @@
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(0, 31);
             this.lbUserName.TabIndex = 0;
-            // 
-            // btnMinus
-            // 
-            this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinus.Location = new System.Drawing.Point(66, 61);
-            this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(117, 94);
-            this.btnMinus.TabIndex = 1;
-            this.btnMinus.Text = "-";
-            this.btnMinus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinus.UseVisualStyleBackColor = true;
-            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
-            // 
-            // btnPlus
-            // 
-            this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlus.Location = new System.Drawing.Point(827, 61);
-            this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(120, 94);
-            this.btnPlus.TabIndex = 3;
-            this.btnPlus.Text = "+";
-            this.btnPlus.UseVisualStyleBackColor = true;
-            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnOrder
             // 
@@ -112,6 +88,25 @@
             this.panel1.Size = new System.Drawing.Size(1016, 276);
             this.panel1.TabIndex = 6;
             // 
+            // lbCoffeeCount
+            // 
+            this.lbCoffeeCount.AutoSize = true;
+            this.lbCoffeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCoffeeCount.Location = new System.Drawing.Point(528, 92);
+            this.lbCoffeeCount.Name = "lbCoffeeCount";
+            this.lbCoffeeCount.Size = new System.Drawing.Size(96, 37);
+            this.lbCoffeeCount.TabIndex = 7;
+            this.lbCoffeeCount.Text = "Kaffe";
+            // 
+            // tbCoffeeCount
+            // 
+            this.tbCoffeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCoffeeCount.Location = new System.Drawing.Point(378, 61);
+            this.tbCoffeeCount.Multiline = true;
+            this.tbCoffeeCount.Name = "tbCoffeeCount";
+            this.tbCoffeeCount.Size = new System.Drawing.Size(122, 94);
+            this.tbCoffeeCount.TabIndex = 6;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.tbReceipt);
@@ -121,15 +116,6 @@
             this.panel2.Size = new System.Drawing.Size(1016, 465);
             this.panel2.TabIndex = 7;
             // 
-            // tbCoffeeCount
-            // 
-            this.tbCoffeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCoffeeCount.Location = new System.Drawing.Point(372, 61);
-            this.tbCoffeeCount.Multiline = true;
-            this.tbCoffeeCount.Name = "tbCoffeeCount";
-            this.tbCoffeeCount.Size = new System.Drawing.Size(122, 94);
-            this.tbCoffeeCount.TabIndex = 6;
-            // 
             // tbReceipt
             // 
             this.tbReceipt.Location = new System.Drawing.Point(63, 6);
@@ -138,15 +124,36 @@
             this.tbReceipt.Size = new System.Drawing.Size(881, 337);
             this.tbReceipt.TabIndex = 0;
             // 
-            // lbCoffeeCount
+            // btnMinus
             // 
-            this.lbCoffeeCount.AutoSize = true;
-            this.lbCoffeeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCoffeeCount.Location = new System.Drawing.Point(519, 92);
-            this.lbCoffeeCount.Name = "lbCoffeeCount";
-            this.lbCoffeeCount.Size = new System.Drawing.Size(96, 37);
-            this.lbCoffeeCount.TabIndex = 7;
-            this.lbCoffeeCount.Text = "Kaffe";
+            this.btnMinus.BackgroundImage = global::coffeeshop.Properties.Resources.Minus_Rot;
+            this.btnMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinus.FlatAppearance.BorderSize = 0;
+            this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinus.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMinus.Location = new System.Drawing.Point(66, 61);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(117, 94);
+            this.btnMinus.TabIndex = 1;
+            this.btnMinus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            // 
+            // btnPlus
+            // 
+            this.btnPlus.BackgroundImage = global::coffeeshop.Properties.Resources.Plus_Grün;
+            this.btnPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlus.FlatAppearance.BorderSize = 0;
+            this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPlus.Location = new System.Drawing.Point(824, 61);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(120, 94);
+            this.btnPlus.TabIndex = 3;
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // ClientForm
             // 

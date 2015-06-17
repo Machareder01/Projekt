@@ -30,12 +30,5 @@ namespace coffeeshop.DataBL
 
             return dto;
         }
-
-        public bool logout()
-        {
-            return LoginDataAccess.logout();
-        }
-
-
     }
 }

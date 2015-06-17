@@ -31,7 +31,6 @@ C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.exe
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.pdb
 C:\temp\Schule\Projekt\Projekt\bin\Debug\coffeeshop.exe
 C:\temp\Schule\Projekt\Projekt\bin\Debug\coffeeshop.pdb
-C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.csprojResolveAssemblyReference.cache
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.Login.resources
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.Properties.Resources.resources
 C:\temp\Schule\Projekt\Projekt\obj\Debug\coffeeshop.csproj.GenerateResource.Cache

@@ -21,7 +21,6 @@ namespace coffeeshop.DataAccess
             }
         }
 
-
         public static MySqlDataReader login(string copycode)
         {
             MySqlDataReader reader = null;
@@ -41,19 +40,5 @@ namespace coffeeshop.DataAccess
             }
             return reader;
         }
-
-        public static bool logout()
-        {
-            try
-            {
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return false;
-            }
-        }
-
     }
 }
